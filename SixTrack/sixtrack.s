@@ -27325,12 +27325,19 @@ C     Convert r(1), r(2) from U(0,1) -> rvec0 as Gaussian with cutoff mcut (#sig
         write(lout,*) ''
         write(lout,*) 'Calling thin4d subroutine'
         write(lout,*) ''
+        write(lout,*) 'Tracking disabled in special version'
+        write(lout,*) 'ConvertBeamBeam'
+        write(lout,*) ''
 +ei
 +if .not.cr
         write(*,*)    ''
         write(*,*)    'Calling thin4d subroutine'
         write(*,*)    ''
+        write(*,*)    'Tracking disabled in special version'
+        write(*,*)    'ConvertBeamBeam'
+        write(*,*)    ''
 +ei
+        stop
         call thin4d(nthinerr)
       else
 !hr01   hsy(3)=c1m3*hsy(3)*ition
@@ -27344,12 +27351,19 @@ C     Convert r(1), r(2) from U(0,1) -> rvec0 as Gaussian with cutoff mcut (#sig
           write(lout,*) ''
           write(lout,*) 'Calling thin6dua subroutine'
           write(lout,*) ''
+          write(lout,*) 'Tracking disabled in special version'
+          write(lout,*) 'ConvertBeamBeam'
+          write(lout,*) ''
 +ei
 +if .not.cr
           write(*,*)    ''
           write(*,*)    'Calling thin6dua subroutine'
           write(*,*)    ''
+          write(*,*)    'Tracking disabled in special version'
+          write(*,*)    'ConvertBeamBeam'
+          write(*,*)    ''
 +ei
+          stop
           call thin6dua(nthinerr)
         else
 +if collimat
@@ -28250,13 +28264,19 @@ C     Convert r(1), r(2) from U(0,1) -> rvec0 as Gaussian with cutoff mcut (#sig
           write(lout,*) ''
           write(lout,*) 'Calling thin6d subroutine'
           write(lout,*) ''
-
+          write(lout,*) 'Tracking disabled in special version'
+          write(lout,*) 'ConvertBeamBeam'
+          write(lout,*) ''
 +ei
 +if .not.cr
-          write(*,*) ''
-          write(*,*) 'Calling thin6d subroutine'
-          write(*,*) ''
+          write(*,*)    ''
+          write(*,*)    'Calling thin6d subroutine'
+          write(*,*)    ''
+          write(*,*)    'Tracking disabled in special version'
+          write(*,*)    'ConvertBeamBeam'
+          write(*,*)    ''
 +ei
+          stop
           call thin6d(nthinerr)
 !
 !++  Save particle offsets to a file
@@ -28630,12 +28650,19 @@ C     Convert r(1), r(2) from U(0,1) -> rvec0 as Gaussian with cutoff mcut (#sig
           write(lout,*) ''
           write(lout,*) 'Calling thin6d subroutine'
           write(lout,*) ''
+          write(lout,*) 'Tracking disabled in special version'
+          write(lout,*) 'ConvertBeamBeam'
+          write(lout,*) ''
 +ei
 +if .not.cr
           write(*,*)    ''
           write(*,*)    'Calling thin6d subroutine'
           write(*,*)    ''
+          write(*,*)    'Tracking disabled in special version'
+          write(*,*)    'ConvertBeamBeam'
+          write(*,*)    ''
 +ei
+          stop
           call thin6d(nthinerr)
         endif
       endif
@@ -35046,12 +35073,19 @@ C     Convert r(1), r(2) from U(0,1) -> rvec0 as Gaussian with cutoff mcut (#sig
         write(lout,*) ''
         write(lout,*) 'Calling thck4d subroutine'
         write(lout,*) ''
+        write(lout,*) 'Tracking disabled in special version'
+        write(lout,*) 'ConvertBeamBeam'
+        write(lout,*) ''
 +ei
 +if .not.cr
         write(*,*)    ''
         write(*,*)    'Calling thck4d subroutine'
         write(*,*)    ''
+        write(*,*)    'Tracking disabled in special version'
+        write(*,*)    'ConvertBeamBeam'
+        write(*,*)    ''
 +ei
+        stop
         call thck4d(nthinerr)
       else
 !hr01   hsy(3)=c1m3*hsy(3)*ition
@@ -35065,24 +35099,38 @@ C     Convert r(1), r(2) from U(0,1) -> rvec0 as Gaussian with cutoff mcut (#sig
           write(lout,*) ''
           write(lout,*) 'Calling thck6dua subroutine'
           write(lout,*) ''
+          write(lout,*) 'Tracking disabled in special version'
+          write(lout,*) 'ConvertBeamBeam'
+          write(lout,*) ''
 +ei
 +if .not.cr
           write(*,*)    ''
           write(*,*)    'Calling thck6dua subroutine'
           write(*,*)    ''
+          write(*,*)    'Tracking disabled in special version'
+          write(*,*)    'ConvertBeamBeam'
+          write(*,*)    ''
 +ei
+          stop
           call thck6dua(nthinerr)
         else
 +if cr
           write(lout,*) ''
           write(lout,*) 'Calling thck6d subroutine'
           write(lout,*) ''
+          write(lout,*) 'Tracking disabled in special version'
+          write(lout,*) 'ConvertBeamBeam'
+          write(lout,*) ''
 +ei
 +if .not.cr
           write(*,*)    ''
           write(*,*)    'Calling thck6d subroutine'
           write(*,*)    ''
+          write(*,*)    'Tracking disabled in special version'
+          write(*,*)    'ConvertBeamBeam'
+          write(*,*)    ''
 +ei
+          stop
           call thck6d(nthinerr)
         endif
       endif

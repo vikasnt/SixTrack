@@ -17798,6 +17798,15 @@ cc2008
       endif
 +ei
 +ei
+!      if (xstr .ne. xang) then
+         write(*,*) "Error in Beam Beam conversion:"
+         write(*,*) "Only a single crossing angle is now supported"
+         write(*,*) "Got:"
+         write(*,*) "xang =", xang
+         write(*,*) "xstr =", xstr
+         stop
+!      endif
+      
       if(i.lt.0) i=0
       do 1620 j=1,il
       if(idat.eq.bez(j).and.kz(j).eq.20) then
